@@ -1,0 +1,529 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 62.5%; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+/*border-radius*/
+.search {
+  position: relative;
+  padding: 0 3%;
+  width: 94%;
+  height: 47px;
+  background: #00b380;
+  border-bottom: 1px solid #b0b0b0; }
+  .search .search-logo {
+    float: left;
+    margin: 10px 0;
+    width: 23%;
+    height: 27px; }
+    .search .search-logo img {
+      width: 100%;
+      height: 26px; }
+  .search .search-seek {
+    float: left;
+    margin: 10px 1%;
+    width: 56%;
+    height: 27px;
+    background: #ffffff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px; }
+    .search .search-seek .search-seek-input {
+      float: left;
+      margin-left: 5%;
+      width: 80%;
+      font-size: 1.2rem;
+      color: #aaaaaa;
+      line-height: 27px; }
+    .search .search-seek .search-seek-input::-webkit-input-placeholder {
+      color: #aaaaaa; }
+    .search .search-seek .search-icon {
+      float: right;
+      margin-right: 5%;
+      height: 30px;
+      font-size: 1.2rem;
+      color: #aaaaaa;
+      line-height: 27px; }
+  .search .search-quiz {
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    width: 15%;
+    height: 24px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    line-height: 24px; }
+    .search .search-quiz:active {
+      background: #00b380;
+      color: #ffffff; }
+
+body.h {
+  overflow: hidden; }
+
+.seek {
+  display: none;
+  position: fixed;
+  top: 48px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: calc(100% - 48px);
+  background: #ffffff; }
+  .seek .seek-history {
+    margin-top: 10px;
+    text-indent: 1.4rem;
+    width: 100%;
+    color: #aaaaaa;
+    font-size: 1.6rem; }
+  .seek .seek-aspect {
+    overflow: hidden;
+    margin-left: 6%;
+    width: 94%;
+    height: auto;
+    padding: 7px 0 10px 0; }
+    .seek .seek-aspect .seek-aspect-side {
+      float: left;
+      margin: 7px 5%;
+      width: 22%;
+      height: 31px;
+      border: 1px solid #00b380;
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -o-border-radius: 4px;
+      -ms-border-radius: 4px;
+      text-align: center;
+      line-height: 31px;
+      font-size: 1.4rem;
+      color: #494949;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 38px;
+  background: #f4f4f4; }
+  nav a {
+    float: left;
+    width: calc(20% - 2px);
+    height: 36px;
+    background: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #333333;
+    line-height: 36px; }
+  nav a.h {
+    background: #00b380;
+    border: 1px solid #b0b0b0;
+    color: #ffffff; }
+
+.content {
+  margin-top: 0;
+  padding: 0 7% 0 5%;
+  width: 88%;
+  height: 49px;
+  border-bottom: 1px solid #b0b0b0;
+  line-height: 49px; }
+  .content li {
+    float: left;
+    width: 26%;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #000000; }
+  .content li:last-of-type {
+    float: right;
+    width: 20%;
+    text-align: right; }
+
+.card {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #b0b0b0; }
+  .card .card-content {
+    overflow: hidden;
+    padding: 0 4%;
+    width: 92%;
+    height: auto; }
+    .card .card-content .card-top {
+      margin: 8px 0;
+      width: 100%;
+      height: 25px; }
+      .card .card-content .card-top .card-top-ranking {
+        float: left;
+        width: 23px;
+        height: 24px;
+        background: url("../images/icon.png") no-repeat;
+        background-size: 444% 396%;
+        background-position: -36px -7px; }
+      .card .card-content .card-top .card-top-topic {
+        float: left;
+        width: 22%;
+        height: 20px;
+        color: #999999;
+        line-height: 24px;
+        text-align: center;
+        font-size: 1.2rem; }
+      .card .card-content .card-top .card-top-game {
+        float: left;
+        width: 12%;
+        height: 24px;
+        color: #ffffff;
+        line-height: 23px;
+        text-align: center;
+        font-size: 1.2rem;
+        background: #00b380;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px; }
+      .card .card-content .card-top .card-top-head {
+        float: right;
+        margin-right: 3%;
+        width: 23px;
+        height: 23px;
+        border: 1px solid #b0b0b0;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -o-border-radius: 4px;
+        -ms-border-radius: 4px; }
+    .card .card-content .card-name {
+      width: 100%;
+      color: #00b380;
+      line-height: 25px;
+      font-size: 1.4rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: box;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    .card .card-content .card-writer {
+      width: 100%;
+      height: auto;
+      color: #999999;
+      line-height: 25px;
+      font-size: 1.4rem; }
+      .card .card-content .card-writer a {
+        width: 100%;
+        height: auto;
+        color: #999999;
+        line-height: 14px;
+        font-size: 1.4rem; }
+      .card .card-content .card-writer .card-writer-more {
+        margin-right: 3%;
+        color: #00b380; }
+  .card .card-comment {
+    margin: 10px 0 16px 0;
+    width: 100%;
+    height: 38px;
+    background: #f4f4f4; }
+    .card .card-comment li {
+      float: left;
+      width: 33%;
+      height: 38px; }
+      .card .card-comment li .card-comment-content {
+        margin: 0 auto;
+        width: 75%;
+        height: 38px;
+        text-align: center; }
+        .card .card-comment li .card-comment-content .card-comment-logo {
+          height: 38px;
+          text-align: center;
+          font-size: 1.6rem;
+          line-height: 38px;
+          color: #aaaaaa; }
+        .card .card-comment li .card-comment-content .attention {
+          width: 23px;
+          height: 38px;
+          text-align: center;
+          font-size: 1.7rem;
+          line-height: 38px;
+          color: #aaaaaa; }
+        .card .card-comment li .card-comment-content .attention:nth-child(2) {
+          display: none;
+          color: #00b380; }
+        .card .card-comment li .card-comment-content .card-comment-number {
+          height: 38px;
+          line-height: 38px;
+          color: #aaaaaa; }
+    .card .card-comment .card-comment-left {
+      margin-top: 12px;
+      float: left;
+      width: 1px;
+      height: 14px;
+      background: #aaaaaa;
+      text-align: center; }
+
+.reply-place {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; }
+  .reply-place .reply-place-all {
+    overflow: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .reply-place .reply-place-all .go {
+      position: fixed;
+      top: 0;
+      left: 100%;
+      z-index: 2;
+      padding: 0 5%;
+      width: 90%;
+      height: 47px;
+      background: #00b380; }
+      .reply-place .reply-place-all .go .go-back {
+        float: left;
+        width: 23%;
+        height: 47px;
+        line-height: 47px;
+        color: #ffffff;
+        font-size: 1.6rem; }
+      .reply-place .reply-place-all .go .go-omit {
+        float: right;
+        width: 15%;
+        height: 47px;
+        color: #ffffff;
+        text-align: right;
+        font-size: 2.6rem;
+        line-height: 34px; }
+    .reply-place .reply-place-all .topic {
+      margin-top: 47px;
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #b0b0b0; }
+      .reply-place .reply-place-all .topic .topic-content {
+        overflow: hidden;
+        padding: 0 5%;
+        width: 90%;
+        height: auto; }
+        .reply-place .reply-place-all .topic .topic-content .topic-top {
+          overflow: hidden;
+          margin: 15px 0 8px 0;
+          width: 100%;
+          height: auto; }
+          .reply-place .reply-place-all .topic .topic-content .topic-top .topic-top-head {
+            float: left;
+            margin-right: 5%;
+            width: 60px;
+            height: 60px;
+            border: 1px solid #b0b0b0;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%; }
+          .reply-place .reply-place-all .topic .topic-content .topic-top .topic-top-ranking {
+            margin-top: 15px;
+            float: left;
+            height: 25px;
+            width: calc(95% - 67px); }
+            .reply-place .reply-place-all .topic .topic-content .topic-top .topic-top-ranking span {
+              float: left;
+              color: #00b380;
+              text-align: center;
+              font-size: 1.8rem; }
+          .reply-place .reply-place-all .topic .topic-content .topic-top .topic-top-data {
+            float: left;
+            height: 20px;
+            color: #000000;
+            line-height: 24px;
+            text-align: center;
+            font-size: 1.4rem; }
+          .reply-place .reply-place-all .topic .topic-content .topic-top .topic-top-time {
+            margin-left: 10px;
+            float: left;
+            height: 24px;
+            color: #000000;
+            line-height: 23px;
+            text-align: center;
+            font-size: 1.4rem; }
+        .reply-place .reply-place-all .topic .topic-content .topic-writer {
+          width: 100%;
+          height: auto;
+          color: #999999;
+          line-height: 26px;
+          font-size: 1.4rem;
+          text-indent: 2.8rem;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+      .reply-place .reply-place-all .topic .topic-comment {
+        margin: 5px 0 16px 0;
+        width: 100%;
+        height: 38px;
+        background: #f4f4f4; }
+        .reply-place .reply-place-all .topic .topic-comment li {
+          float: left;
+          width: 33%;
+          height: 38px; }
+          .reply-place .reply-place-all .topic .topic-comment li .topic-comment-content {
+            margin: 0 auto;
+            width: 75%;
+            height: 38px;
+            text-align: center; }
+            .reply-place .reply-place-all .topic .topic-comment li .topic-comment-content .topic-comment-logo {
+              height: 38px;
+              text-align: center;
+              font-size: 1.6rem;
+              line-height: 38px;
+              color: #aaaaaa; }
+            .reply-place .reply-place-all .topic .topic-comment li .topic-comment-content .attention {
+              width: 23px;
+              height: 38px;
+              text-align: center;
+              font-size: 1.7rem;
+              line-height: 38px;
+              color: #aaaaaa; }
+            .reply-place .reply-place-all .topic .topic-comment li .topic-comment-content .attention:nth-child(2) {
+              display: none;
+              color: #00b380; }
+            .reply-place .reply-place-all .topic .topic-comment li .topic-comment-content .topic-comment-number {
+              height: 38px;
+              line-height: 38px;
+              color: #aaaaaa; }
+        .reply-place .reply-place-all .topic .topic-comment .topic-comment-left {
+          margin-top: 12px;
+          float: left;
+          width: 1px;
+          height: 14px;
+          background: #aaaaaa;
+          text-align: center; }
+    .reply-place .reply-place-all .sort {
+      margin: 14px 5% 0 0;
+      float: right;
+      color: #000000;
+      text-align: center;
+      font-size: 1.2rem; }
+      .reply-place .reply-place-all .sort .sort-heat {
+        float: left; }
+      .reply-place .reply-place-all .sort .sort-heat.h {
+        color: #00b380; }
+      .reply-place .reply-place-all .sort .sort-wire {
+        margin: 3px 8px;
+        float: left;
+        width: 1px;
+        height: 12px;
+        background: #000000;
+        text-align: center; }
+    .reply-place .reply-place-all .reply {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #b0b0b0; }
+      .reply-place .reply-place-all .reply .reply-content {
+        overflow: hidden;
+        padding: 0 5%;
+        width: 90%;
+        height: auto; }
+        .reply-place .reply-place-all .reply .reply-content .reply-top {
+          overflow: hidden;
+          margin: 8px 0;
+          width: 100%;
+          height: auto; }
+          .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-head {
+            float: left;
+            margin-right: 5%;
+            width: 60px;
+            height: 60px;
+            border: 1px solid #b0b0b0;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%; }
+          .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-ranking {
+            margin-top: 15px;
+            float: left;
+            height: 20px;
+            width: calc(95% - 67px); }
+            .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-ranking span {
+              float: left;
+              color: #00b380;
+              text-align: center;
+              font-size: 1.4rem; }
+            .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-ranking .reply-top-sort {
+              float: right;
+              color: #999999;
+              line-height: 18replypx;
+              text-align: center;
+              font-size: 1.2rem; }
+              .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-ranking .reply-top-sort .reply-top-heat {
+                margin-left: 8px;
+                float: left;
+                font-size: 1.4rem; }
+              .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-ranking .reply-top-sort .reply-top-heat:first-of-type {
+                margin-top: -5px;
+                font-size: 1.8rem; }
+              .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-ranking .reply-top-sort .reply-top-criticism {
+                width: 20px;
+                height: 25px;
+                background: url("../images/talk.png") no-repeat;
+                background-size: cover;
+                background-position: 1px -19px; }
+          .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-data {
+            float: left;
+            height: 20px;
+            color: #999999;
+            line-height: 24px;
+            text-align: center;
+            font-size: 1.4rem; }
+          .reply-place .reply-place-all .reply .reply-content .reply-top .reply-top-time {
+            margin-left: 10px;
+            float: left;
+            height: 24px;
+            color: #999999;
+            line-height: 23px;
+            text-align: center;
+            font-size: 1.4rem; }
+        .reply-place .reply-place-all .reply .reply-content .reply-writer {
+          margin: 25px 0;
+          width: 100%;
+          height: auto;
+          color: #000000;
+          line-height: 26px;
+          font-size: 1.4rem;
+          text-overflow: ellipsis;
+          overflow: hidden; }
