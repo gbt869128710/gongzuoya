@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/gongzuoya-dynamic-response.css">
+	<link rel="stylesheet" href="css/gongzuoya.css">
 	<link rel="stylesheet" href="font/iconfont.css">
 </head>
 <body>
@@ -15,19 +15,12 @@
 		<form action="" class="search-seek">
 			<input type="text" class="search-seek-input" placeholder="搜索你感兴趣的内容">
 			<div class="search-icon">&#xe608;</div>
-			<input type="submit" value="提问" class="search-quiz">
+            <a href="gongzuoya-please-login.html">
+                <input type="submit" value="" class="search-quiz">
+            </a>
 		</form>
 	</div>
 	<div class="seek">
-	    <div class="seek-history">搜索历史</div>
-	    <ul class="seek-aspect">
-            <li class="seek-aspect-side">健身</li>
-            <li class="seek-aspect-side">游戏</li>
-            <li class="seek-aspect-side">职业发展</li>
-            <li class="seek-aspect-side">健身</li>
-            <li class="seek-aspect-side">游戏</li>
-            <li class="seek-aspect-side">职业发展</li>
-        </ul>
         <div class="seek-history">热门搜索</div>
 	    <ul class="seek-aspect">
             <li class="seek-aspect-side">就业方向</li>
@@ -35,78 +28,130 @@
             <li class="seek-aspect-side">网申</li>
         </ul>
 	</div>
-	<nav>
-		<a href="gongzuoya-home-page.html">关注</a>
-		<a href="gongzuoya-dynamic-question.html">消息</a>
-		<a href="gongzuoya-personage.html">个人</a>
-	</nav>
 	<ul class="content">
-	    <li>
-           <a href="gongzuoya-dynamic-question.html">我的问题
-            <span>&#xe6cc;</span>
-           </a>
-		</li>
-		<li>
-            <a href="gongzuoya-dynamic-response.html">我的回答
-		    <span>&#xe631;</span>
-            </a>
-        </li>
-	</ul>
-	<div class="response">
-	    <div class="card">
-            <div class="card-content">
-                <div class="card-top">
-                    <div class="card-top-head">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-top-ranking">
-                        <span>滚滚</span>
-                        <span class="answer">回复了你的回答</span>
-                        <span class="card-top-sort"></span>
-                    </div>
-                    <span class="card-top-time">22:45</span>
-                </div>
-                <p class="card-writer">滚滚长江东逝水</p>
+        <a href="gongzuoya.html">
+            <li class="content-heat">按热度</li>
+        </a>
+        <li class="content-wire"></li>
+        <a href="gongzuoya-time.html">
+            <li class="content-heat content-time">按时间</li>
+        </a>
+    </ul>
+	<div class="card">
+        <div class="card-content">
+            <div class="card-top">
+                <span class="card-top-topic">来自话题：</span>
+                <div class="card-top-game">王者荣耀</div>
+                <div class="card-top-head">+关注</div>
             </div>
-            <ul class="card-comment">
-                <li>
-                   <div class="card-comment-head">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-comment-ranking">
-                        <span>我</span>:
-                        <span class="card-comment-time">滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。</span>
-                    </div>
-                </li>
-            </ul>
+            <p class="card-name">假如厉害和孙悟空单挑，到底谁更有胜的把握?</p>
+            <p class="card-writer">作者：<span class="card-writer-name">黄老邪</span></p>
+            <p class="card-writer">
+                <span class="card-writer-content">李白和猴子都是我比较讨厌的，很想让俩二逼打一架…
+                </span>
+                <span class="card-writer-more">>></span>
+            </p>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <div class="card-top">
-                    <div class="card-top-head">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-top-ranking">
-                        <span>滚滚</span>
-                        <span class="answer">回复了你的回答</span>
-                        <span class="card-top-sort"></span>
-                    </div>
-                    <span class="card-top-time">22:45</span>
+        <ul class="card-comment">
+            <li class="card-comment-left">
+                <div class="card-comment-content">
+                    <span class="card-comment-logo">&#xe622;</span>
+                    <span class="card-comment-number">9</span>
                 </div>
-                <p class="card-writer">滚滚长江东逝水</p>
+            </li>
+            <li class="card-comment-wire"></li>
+            <li class="card-comment-center">
+                <div class="card-comment-content">
+                    <span class="card-comment-logo">&#xe60f;</span>
+                    <span class="card-comment-number">4</span>
+                </div>
+            </li>
+            <li class="card-comment-wire"></li>
+            <li class="card-comment-left">
+                <div class="card-comment-content">
+                    <span class="attention">&#xe616;</span>
+                    <span class=" attention">&#xe60e;</span>
+                    <span class="card-comment-number">8</span>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<div class="card">
+        <div class="card-content">
+            <div class="card-top">
+                <span class="card-top-topic">来自话题：</span>
+                <div class="card-top-game">王者荣耀</div>
+                <div class="card-top-head">+关注</div>
             </div>
-            <ul class="card-comment">
-                <li>
-                   <div class="card-comment-head">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-comment-ranking">
-                        <span>我</span>:
-                        <span class="card-comment-time">滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。</span>
-                    </div>
-                </li>
-            </ul>
+            <p class="card-name">假如厉害和孙悟空单挑，到底谁更有胜的把握?</p>
+            <p class="card-writer">作者：<span class="card-writer-name">黄老邪</span></p>
+            <p class="card-writer">
+                <span class="card-writer-content">李白和猴子都是我比较讨厌的，很想让俩二逼打一架…
+                </span>
+                <span class="card-writer-more">>></span>
+            </p>
         </div>
+        <ul class="card-comment">
+            <li class="card-comment-left">
+                <div class="card-comment-content">
+                    <span class="card-comment-logo">&#xe622;</span>
+                    <span class="card-comment-number">9</span>
+                </div>
+            </li>
+            <li class="card-comment-wire"></li>
+            <li class="card-comment-center">
+                <div class="card-comment-content">
+                    <span class="card-comment-logo">&#xe60f;</span>
+                    <span class="card-comment-number">4</span>
+                </div>
+            </li>
+            <li class="card-comment-wire"></li>
+            <li class="card-comment-left">
+                <div class="card-comment-content">
+                    <span class="attention">&#xe616;</span>
+                    <span class=" attention">&#xe60e;</span>
+                    <span class="card-comment-number">8</span>
+                </div>
+            </li>
+        </ul>
+	</div>
+	<div class="card">
+        <div class="card-content">
+            <div class="card-top">
+                <span class="card-top-topic">来自话题：</span>
+                <div class="card-top-game">王者荣耀</div>
+                <div class="card-top-head">+关注</div>
+            </div>
+            <p class="card-name">假如厉害和孙悟空单挑，到底谁更有胜的把握?</p>
+            <p class="card-writer">作者：<span class="card-writer-name">黄老邪</span></p>
+            <p class="card-writer">
+                <span class="card-writer-content">李白和猴子都是我比较讨厌的，很想让俩二逼打一架…
+                </span>
+                <span class="card-writer-more">>></span>
+            </p>
+        </div>
+        <ul class="card-comment">
+            <li class="card-comment-left">
+                <div class="card-comment-content">
+                    <span class="card-comment-logo">&#xe622;</span>
+                    <span class="card-comment-number">9</span>
+                </div>
+            </li>
+            <li class="card-comment-wire"></li>
+            <li class="card-comment-center">
+                <div class="card-comment-content">
+                    <span class="card-comment-logo">&#xe60f;</span>
+                    <span class="card-comment-number">4</span>
+                </div>
+            </li>
+            <li class="card-comment-wire"></li>
+            <li class="card-comment-left">
+                <div class="card-comment-content">
+                    <span class="attention">&#xe616;</span>
+                    <span class="card-comment-number">8</span>
+                </div>
+            </li>
+        </ul>
 	</div>
 	<div class="reply-place">
         <div class="reply-place-all">
@@ -161,8 +206,9 @@
                     <li class="topic-comment-wire"></li>
                     <li>
                         <div class="topic-comment-content">
-                            <span class="attention">&#xe601;</span>
-                            <span class="topic-comment-number">8</span>
+                            <span class="attention">&#xe616;</span>
+                            <span class=" attention">&#xe60e;</span>
+                            <span class="topic-comment-number">8k</span>
                         </div>
                     </li>
                 </ul>
@@ -225,69 +271,10 @@
             </div>
         </div>
 	</div>
-    <div class="quiz">
-        <div class="quiz-all">
-            <div class="quiz-go">
-                <div class="quiz-go-back">&#xe702;返回</div>
-                <div class="quiz-go-omit">.&nbsp;.&nbsp;.</div>
-            </div>
-            <p class="quiz-qusetion">写下你的问题</p>
-            <p class="quiz-tips">小贴士：描述精准的问题更易得到解答</p>
-            <div class="quiz-depict">
-                <span>写下问题：</span>
-                <div class="quiz-depict-qusetion">
-                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
-                </div>
-            </div>
-            <div class="quiz-depict">
-                <span>归属话题</span>
-                <div class="quiz-depict-topic textarea">
-                    <input type="text" placeholder="输入关键词自动检索话题">
-                </div>
-                <div class="quiz-depict-topics">
-                    <p>篮球</p>
-                </div>
-            </div>
-            <div class="quiz-depict">
-                <span>补充描述</span>
-                <div class="quiz-depict-qusetion replenish">
-                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
-                </div>
-            </div>
-            <div class="quiz-once">
-            <span>马上提问</span></div>
-        </div>
-	</div>
 	<div class="more-logo">
 	    <div class="more-loading"></div>
-	</div>
-	<div class="cover-all"></div>
-    <div class="restore">
-        <div class="restore-depict">
-            <pre></pre>
-            <textarea name="" id="" cols="30" rows="1" placeholder="写评论…" class="restore-depict-textarea"></textarea>
-        </div>
-        <div class="restore-send">
-            <div class="restore-phiz-send">发送</div>
-            <div class="restore-print restore-phiz">&#xe761;</div>
-            <div class="restore-print">&#xe62f;</div>
-        </div>
-    </div>
-	<div class="share">
-	    <div class="bdsharebuttonbox">
-	    <div class="backdrop"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
-	    <div class="backdrop"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
-	    <div class="backdrop"><a href="#" class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a></div>
-	    <div class="wire"></div>
-	    <div class="backdrop"><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a></div>
-	    <div class="backdrop"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></div>
-	    <div class="backdrop"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></div></div>
-	    
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-        <div class="cancel">取消</div>
 	</div>
 </body>
 </html>
 <script src="js/jquery.min.js"></script>
-<script src="js/autosize.js"></script>
-<script src="js/gongzuoya-dynamic-response.js"></script>
+<script src="js/gongzuoya.js"></script>

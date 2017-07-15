@@ -15,8 +15,8 @@
 		<form action="" class="search-seek">
 			<input type="text" class="search-seek-input" placeholder="搜索你感兴趣的内容">
 			<div class="search-icon">&#xe608;</div>
+			<input type="submit" value="提问" class="search-quiz">
 		</form>
-		<div class="search-quiz">提问</div>
 	</div>
 	<div class="seek">
 	    <div class="seek-history">搜索历史</div>
@@ -36,10 +36,8 @@
         </ul>
 	</div>
 	<nav>
-		<a href="gongzuoya-home-page.html">首页</a>
-		<a href="gongzuoya-newest.html">最新</a>
-		<a href="gongzuoya-topic.html">话题</a>
-		<a href="gongzuoya-dynamic-question.html">动态</a>
+		<a href="gongzuoya-home-page.html">关注</a>
+		<a href="gongzuoya-dynamic-question.html">消息</a>
 		<a href="gongzuoya-personage.html">个人</a>
 	</nav>
 	<ul class="content">
@@ -55,9 +53,10 @@
                 </div>
             </div>
         </li>
+        <li class="integral">积分：<span>996</span></li>
 	</ul>
 	<ul class="person">
-	    <a href="gongzuoya-topic.html">
+	    <a href="gongzuoya-home-page.html">
 		<li>
             <span>我的关注</span>
             <div class="circle"></div>
@@ -78,29 +77,66 @@
             <span class="corner">&#xe66e;</span>
 		</li>
 		</a>
-	    <a href="">
-		<li>
-            <span>我的积分</span>
-            <div class="circle"></div>
-            <span class="corner">&#xe66e;</span>
-		</li>
-		</a>
-	    <a href="">
-		<li>
-            <span>我的资料</span>
-            <div class="circle"></div>
-            <span class="corner">&#xe66e;</span>
-		</li>
-		</a>
-	    <a href="gongzuoya-home-page.html">
-		<li>
-            <span>回工作呀</span>
-            <div class="circle"></div>
-            <span class="corner">&#xe66e;</span>
-		</li>
-		</a>
 	</ul>
 	
+    <div class="quiz">
+        <div class="quiz-all">
+            <div class="quiz-go">
+                <div class="quiz-go-back">&#xe702;返回</div>
+                <div class="quiz-go-omit">.&nbsp;.&nbsp;.</div>
+            </div>
+            <p class="quiz-qusetion">写下你的问题</p>
+            <p class="quiz-tips">小贴士：描述精准的问题更易得到解答</p>
+            <div class="quiz-depict">
+                <span>写下问题：</span>
+                <div class="quiz-depict-qusetion">
+                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                </div>
+            </div>
+            <div class="quiz-depict">
+                <span>归属话题</span>
+                <div class="quiz-depict-topic textarea">
+                    <input type="text" placeholder="输入关键词自动检索话题">
+                </div>
+                <div class="quiz-depict-topics">
+                    <p>篮球</p>
+                </div>
+            </div>
+            <div class="quiz-depict">
+                <span>补充描述</span>
+                <div class="quiz-depict-qusetion replenish">
+                    <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+                </div>
+            </div>
+            <div class="quiz-once">
+            <span>马上提问</span></div>
+        </div>
+	</div>
+	<div class="cover"></div>
+	<div class="restore">
+	    <div class="restore-depict">
+            <pre></pre>
+            <textarea name="" id="" cols="30" rows="1" placeholder="写评论…" class="restore-depict-textarea"></textarea>
+        </div>
+        <div class="restore-send">
+            <div class="restore-phiz-send">发送</div>
+            <div class="restore-print restore-phiz">&#xe761;</div>
+            <div class="restore-print">&#xe62f;</div>
+        </div>
+	</div>
+	<div class="share">
+	    <div class="bdsharebuttonbox">
+	    <div class="backdrop"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+	    <div class="backdrop"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+	    <div class="backdrop"><a href="#" class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a></div>
+	    <div class="wire"></div>
+	    <div class="backdrop"><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a></div>
+	    <div class="backdrop"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></div>
+	    <div class="backdrop"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></div></div>
+	    
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        <div class="cancel">取消</div>
+	</div>
 </body>
 </html>
 <script src="js/jquery.min.js"></script>
