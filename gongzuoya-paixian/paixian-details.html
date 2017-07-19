@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/paixian.css">
+    <link rel="stylesheet" href="css/popimage.css">
 </head>
 <body>
     <header>
@@ -170,58 +171,95 @@
                         <p>TA的作品？</p>
                     </li>
                     <li class="teach">
-                        <div class="zoombox">
-                            <span class="photoBox">
-                                <div class="loadingBox">
-<!--                                    <span class="loading"></span>-->
-                                </div>
-                                <img src="images/20170718104206.jpg" class="zoom" onclick="zoom_image($(this).parent());"/>
-                            </span><!--photoBox end-->
-
-                            <div class="photoArea" style="display:none;">
-                                <p><img src="about:blank" class="minifier" onclick="zoom_image($(this).parent().parent());"></p>
-                                <p class="toolBar gc">
-                                    <span><a class="green" href="javascript:void(0)" onclick="zoom_image($(this).parent().parent().parent());">收起</a></span>|<span class="view"><a class="green" href="images/20170718104206.jpg" target="_blank">查看原图</a></span>
-                                </p>
-                            </div><!--photoArea end-->
-                        </div>
-                        <div class="zoombox">
-                            <span class="photoBox">
-                                <div class="loadingBox">
-<!--                                    <span class="loading"></span>-->
-                                </div>
-                                <img src="images/20170718104212.jpg" class="zoom" onclick="zoom_image($(this).parent());"/>
-                            </span><!--photoBox end-->
-
-                            <div class="photoArea" style="display:none;">
-                                <p><img src="about:blank" class="minifier" onclick="zoom_image($(this).parent().parent());"></p>
-                                <p class="toolBar gc">
-                                    <span><a class="green" href="javascript:void(0)" onclick="zoom_image($(this).parent().parent().parent());">收起</a></span>|<span class="view"><a class="green" href="images/20170718104206.jpg" target="_blank">查看原图</a></span>
-                                </p>
-                            </div><!--photoArea end-->
-                        </div>
-                        <div class="zoombox">
-                            <span class="photoBox">
-                                <div class="loadingBox">
-<!--                                    <span class="loading"></span>-->
-                                </div>
-                                <img src="images/20170718104216.jpg" class="zoom" onclick="zoom_image($(this).parent());"/>
-                            </span><!--photoBox end-->
-
-                            <div class="photoArea" style="display:none;">
-                                <p><img src="about:blank" class="minifier" onclick="zoom_image($(this).parent().parent());"></p>
-                                <p class="toolBar gc">
-                                    <span><a class="green" href="javascript:void(0)" onclick="zoom_image($(this).parent().parent().parent());">收起</a></span>|<span class="view"><a class="green" href="images/20170718104206.jpg" target="_blank">查看原图</a></span>
-                                </p>
-                            </div><!--photoArea end-->
+                        <div class="picScroll-left">
+                            <div class="hd">
+                                <a class="prev" href="javascript:void(0)"><img src="http://localhost/js/SuperSlide/img/left.jpg" /></a>
+                                <a class="next" href="javascript:void(0)"><img src="http://localhost/js/SuperSlide/img/right.jpg" /></a>
+                            </div>
+                            <div class="bd">
+                                <ul class="picList">
+                                    <li>
+                                        <div class="pic">
+                                            <a class="image_gall" href="images/20170718104206.jpg">
+                                                <img src="images/20170718104206.jpg" width="120" height="120" alt="01" title="01" />
+                                            </a>
+                                        </div>
+                                        <div class="title">01</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <a class="image_gall" href="images/20170718104212.jpg">
+                                                <img src="images/20170718104212.jpg" width="120" height="120" alt="02" title="02" />
+                                            </a>
+                                        </div>
+                                        <div class="title">02</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <a class="image_gall" href="images/20170718104216.jpg">
+                                                <img src="images/20170718104216.jpg" width="120" height="120" alt="03" title="03" />
+                                            </a>
+                                        </div>
+                                        <div class="title">03</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <a class="image_gall" href="images/20170718104216.jpg">
+                                                <img src="images/20170718104216.jpg" width="120" height="120" alt="03" title="03" />
+                                            </a>
+                                        </div>
+                                        <div class="title">03</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <a class="image_gall" href="images/20170718104216.jpg">
+                                                <img src="images/20170718104216.jpg" width="120" height="120" alt="03" title="03" />
+                                            </a>
+                                        </div>
+                                        <div class="title">03</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <a class="image_gall" href="images/20170718104216.jpg">
+                                                <img src="images/20170718104216.jpg" width="120" height="120" alt="03" title="03" />
+                                            </a>
+                                        </div>
+                                        <div class="title">03</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <a class="image_gall" href="images/20170718104216.jpg">
+                                                <img src="images/20170718104216.jpg" width="120" height="120" alt="03" title="03" />
+                                            </a>
+                                        </div>
+                                        <div class="title">03</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ul>
-                
             </div>
         </div>
     </div>
 </body>
 </html>
 <script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/jquery.popImage.mini.js" language="javascript"></script>
 <script src="js/paixian.js"></script>
+<script language="javascript" type="text/javascript">
+$(function() {
+    $("a.image_gall").popImage();
+});
+
+jQuery(".picScroll-left").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    autoPage: true,
+    effect: "left",
+    autoPlay: true,
+    vis: 4,
+    trigger: "click"
+});
+</script>
