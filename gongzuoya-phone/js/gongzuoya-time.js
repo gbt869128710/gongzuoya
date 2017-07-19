@@ -6,7 +6,7 @@ $(function(){
 		$(".search-quiz").fadeOut(400);
 	})
 	$("body").on("blur",".search-seek",function(){
-		$(this).stop(true).animate({width: "55%"});
+		$(this).stop(true).animate({width: "56%"});
 		$(".search-quiz").fadeIn(400);
         $("body").removeClass("h");
 	})

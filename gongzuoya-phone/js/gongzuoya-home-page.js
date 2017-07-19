@@ -6,7 +6,7 @@ $(function(){
 		$(".search-quiz").fadeOut(400);
 	})
 	$("body").on("blur",".search-seek",function(){
-		$(this).stop(true).animate({width: "55%"});
+		$(this).stop(true).animate({width: "56%"});
 		$(".search-quiz").fadeIn(400);
         $("body").removeClass("h");
 	})
@@ -74,7 +74,7 @@ $(function(){
     $(".sort-heat").on("click",function(){
         $(this).addClass("h").siblings(".sort-heat").removeClass("h");
     })
-    $(".content-heat:last").addClass("h").siblings(".content-heat").removeClass("h");
+    $(".content-heat").eq(0).addClass("h");
     $(".content-heat").on("click",function(){
         $(this).addClass("h").siblings(".content-heat").removeClass("h");
     })
@@ -82,13 +82,13 @@ $(function(){
     $("body").on("click",".reply-top-praise",function(){
          if($(this).hasClass("h")){
             $(this).html("&#xe64c;").css({color:"#999999"});
-            $(this).removeClass("h")
+            $(this).removeClass("h");
             var i=parseInt($(this).siblings(".reply-top-wire").text());
             i--;
             $(this).siblings(".reply-top-wire").text(i); 
          }else{
             $(this).html("&#xe610;").css({color:"#00b380"});
-            $(this).addClass("h")
+            $(this).addClass("h");
             var i=parseInt($(this).siblings(".reply-top-wire").text());
             i++;
             $(this).siblings(".reply-top-wire").text(i); 

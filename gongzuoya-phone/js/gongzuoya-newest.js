@@ -6,7 +6,7 @@ $(function(){
 		$(".search-quiz").fadeOut(400);
 	})
 	$("body").on("blur",".search-seek",function(){
-		$(this).stop(true).animate({width: "55%"});
+		$(this).stop(true).animate({width: "56%"});
 		$(".search-quiz").fadeIn(400);
         $("body").removeClass("h");
 	})
@@ -22,7 +22,7 @@ $(function(){
         $(".seek").hide();
     })
 	//导航栏
-	$("nav a").eq(1).addClass("h");
+	$("nav a").eq(0).addClass("h");
 	$("nav a").on("click",function(){
 		$(this).addClass("h").siblings("nav a").removeClass("h");
 	})
@@ -36,8 +36,28 @@ $(function(){
             $(".content").css({"margin-top": "0"});
         } 
     })
-     //评论
-    $(".card-top-sort").on("click",function(){
+    //关注
+    $("body").on("click",".attention",function(){
+         if($(this).hasClass("h")){
+            $(this).html("&#xe601;").css({color:"#999999"});
+            $(this).removeClass("h");
+            var i=parseInt($(this).siblings(".card-comment-number,.topic-comment-number").text());
+            i--;
+            $(this).siblings(".card-comment-number,.topic-comment-number").text(i); 
+         }else{
+            $(this).html("&#xe687;").css({color:"#00b380"});
+            $(this).addClass("h");
+            var i=parseInt($(this).siblings(".card-comment-number,.topic-comment-number").text());
+            i++;
+            $(this).siblings(".card-comment-number,.topic-comment-number").text(i); 
+         }
+    })
+    //详情
+    $(".card-comment-center").on("click",function(){
+        $(".reply-place").stop(true).animate({"left":0});
+        $(".go").stop(true).animate({"left":0});
+    })
+    $(".card-name").on("click",function(){
         $(".reply-place").stop(true).animate({"left":0});
         $(".go").stop(true).animate({"left":0});
     })
@@ -45,10 +65,18 @@ $(function(){
         $(".reply-place").stop(true).animate({"left":"100%"});
         $(".go").stop(true).animate({"left":"100%"});
     })
+    //无刷新加载
+    $(".card-writer-more").on("click",function(){
+        $(this).hide();
+    })
     //排序
     $(".sort-heat").eq(0).addClass("h");
     $(".sort-heat").on("click",function(){
         $(this).addClass("h").siblings(".sort-heat").removeClass("h");
+    })
+    $(".content-heat:last").addClass("h").siblings(".content-heat").removeClass("h");
+    $(".content-heat").on("click",function(){
+        $(this).addClass("h").siblings(".content-heat").removeClass("h");
     })
     //点赞
     $("body").on("click",".reply-top-praise",function(){
@@ -64,22 +92,6 @@ $(function(){
             var i=parseInt($(this).siblings(".reply-top-wire").text());
             i++;
             $(this).siblings(".reply-top-wire").text(i); 
-         }
-    })
-    //关注
-    $("body").on("click",".attention",function(){
-         if($(this).hasClass("h")){
-            $(this).html("&#xe601;").css({color:"#999999"});
-            $(this).removeClass("h");
-            var i=parseInt($(this).siblings(".topic-comment-number").text());
-            i--;
-            $(this).siblings(".topic-comment-number").text(i); 
-         }else{
-            $(this).html("&#xe687;").css({color:"#00b380"});
-            $(this).addClass("h");
-            var i=parseInt($(this).siblings(".topic-comment-number").text());
-            i++;
-            $(this).siblings(".topic-comment-number").text(i); 
          }
     })
     //回复的大小不一
